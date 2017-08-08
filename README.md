@@ -8,40 +8,50 @@
 
 2、实例：
 
-    import HeaderBar from 'react-native-pull-zoom-view'
+    import React, {Component} from 'react';
+    import {
+        StyleSheet,
+        View,
+        Dimensions,
+    } from 'react-native';
+    import PullZoomScrollView from 'react-native-pull-zoom-view'
+    var {height, width} = Dimensions.get('window');
 
-    <HeaderBar
-        containerStyle={{backgroundColor:'red'}}
-        title="我是title"/>
+    export default class Demo extends Component {
+        render() {
+            return (
+                <View style={{flex: 1}}>
+                    <PullZoomScrollView
+                        imageHeight={300}
+                        minHeight={250}
+                        source={require('./s63.png')}>
+                        <View style={{height:100,width:width,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                        <View style={{height:100,width:width,marginTop:10,backgroundColor:'red'}}></View>
+                    </PullZoomScrollView>
+                </View>
+            );
+        }
+    }
 
 
 3、
 
-   containerStyle: 容器style
+   imageHeight: 图片的高度
 
-   title: title
+   source: 图片资源
 
-   titleStyle: title style
+   minHeight: 最小高度
 
-   leftText: 左侧文字
-
-   leftTextStyle: 左侧文字样式
-
-   leftImageSource: 左侧图片
-
-   leftImageStyle: 左侧图片样式
-
-   rightText: 右侧文字
-
-   rightTextStyle: 右侧文字样式
-
-   rightImageSource: 右侧图片
-
-   rightImageStyle: 右侧图片样式
-
-   onLeftPress:点击左侧回调
-
-   onRightPress: 点击右侧回调
-
- 
- ![image](https://github.com/781238222/react-native-header-bar/blob/master/examples/screen/1.jpg)
+   
