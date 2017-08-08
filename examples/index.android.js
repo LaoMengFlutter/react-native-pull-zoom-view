@@ -9,6 +9,6 @@ import {
 
 } from 'react-native';
 
-import PwdInputDemo from './HeaderBarDemo'
+import Demo from './Demo'
 
-AppRegistry.registerComponent('Touchable', () => PwdInputDemo);
+AppRegistry.registerComponent('Touchable', () => Demo);

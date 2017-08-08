@@ -1,3 +1,3 @@
+import PullZoomScrollView from './PullZoomScrollView'
 
-
-export PullZoomScrollView from './PullZoomScrollView'
+module.exports = PullZoomScrollView
